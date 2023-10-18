@@ -6,7 +6,7 @@ const Navbar2 = () => {
         <div className="flex justify-center bg-[#247CC6] h-14"> 
             <ul className="flex  lg:gap-5 items-center justify-center ">
                 <Link to='/'><button className="btn px-2 border-none bg-[#247CC6] text-white">Home</button></Link>
-                <Link to='/'><button className="btn px-2 border-none bg-[#247CC6] text-white">Add Product</button></Link>
+                <Link to='/addproduct'><button className="btn px-2 border-none bg-[#247CC6] text-white">Add Product</button></Link>
                 <Link to='/'><button className="btn px-2 border-none bg-[#247CC6] text-white">My Cart</button></Link> 
                 <Link to='/'><button className="btn px-2 border-none bg-[#247CC6] text-white">Extra</button></Link> 
                 <Link to='/'><button className="btn px-2 border-none bg-[#247CC6] text-white">Extra 2</button></Link> 
