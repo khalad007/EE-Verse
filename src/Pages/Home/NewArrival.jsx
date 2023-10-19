@@ -12,7 +12,7 @@ const NewArrival = () => {
                 <figure><img src="https://i.ibb.co/nBP1RRY/2377952.jpg" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
-                        Shoes!
+                        Speaker!
                         <div className="badge badge-secondary">NEW</div>
                     </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -27,7 +27,7 @@ const NewArrival = () => {
                 <figure><img src="https://i.ibb.co/JjrQwYC/3794066.jpg" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
-                        Shoes!
+                        Smart Watch!
                         <div className="badge badge-secondary">NEW</div>
                     </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -39,10 +39,10 @@ const NewArrival = () => {
             </div>
             {/* ........................... */}
             <div className="card bg-base-100 shadow-xl w-64">
-                <figure><img src="https://i.ibb.co/QmBDVYT/raspberry-pi-3676379-1280.jpg" alt="Shoes" /></figure>
+                <figure><img className="h-64" src="https://i.ibb.co/QmBDVYT/raspberry-pi-3676379-1280.jpg" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
-                        Shoes!
+                        RaspBerry PI!
                         <div className="badge badge-secondary">NEW</div>
                     </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -57,7 +57,7 @@ const NewArrival = () => {
                 <figure><img src=" https://i.ibb.co/jffh8t0/wireless-home-security-surveillance-camera.jpg" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
-                        Shoes!
+                        CC Camera!
                         <div className="badge badge-secondary">NEW</div>
                     </h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
