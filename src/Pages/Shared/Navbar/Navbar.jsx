@@ -1,6 +1,17 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Provider/AuthProvider";
+import defaultUserPic from "../../../assets/user.png"
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleSignOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
 
 
     return (
@@ -11,10 +22,20 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end">
-                <ul className="menu menu-horizontal px-1 flex">
-                    <Link to="/login"><button className="btn bg-[#247CC6] text-white">Login</button></Link>
-                </ul>
-                <a className="btn">Button</a>
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                    <div className="w-10 rounded-full">
+                        <img src={user ? user.photoURL || defaultUserPic : defaultUserPic} alt="User Profile" />
+                    </div>
+                </label>
+
+                {
+                    user ? <>
+                        <span className="mr-2 font-semibold">{user.displayName}</span>
+                        <button onClick={handleSignOut} className="btn btn-neutral">Sign Out</button>
+                    </>
+                        :
+                        <Link to="/login"><button className="btn btn-neutral">Login</button></Link>
+                }
             </div>
         </div>
     );

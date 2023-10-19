@@ -12,8 +12,9 @@ const Root = () => {
             </div>
             <Navbar2></Navbar2>
             <Outlet></Outlet>
+            
             <div className='max-w-6xl mx-auto'>
-                <Footer></Footer>
+                <Footer></Footer> 
             </div>
         </div>
     );
