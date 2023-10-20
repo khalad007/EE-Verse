@@ -9,6 +9,8 @@ import Subscribe from "./Subscribe";
 const Home = () => {
 
     const brands = useLoaderData();
+    
+    console.log(brands)
     return (
         <div>
             <Banner></Banner>
