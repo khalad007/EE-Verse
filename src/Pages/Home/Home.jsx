@@ -29,7 +29,11 @@ const Home = () => {
                 <NewArrival></NewArrival>
             </div>
 
+            <div>
+                <h1 className="text-center font-bold mt-14">--- Process</h1>
+                <h1 className="text-center font-bold lg:text-5xl text-4xl mb-10">How it <span className="text-[#247CC6]">work's ..!</span></h1>
             <HowItWorks></HowItWorks>
+            </div>
 
             <div className='max-w-6xl mx-auto'>
                 <Subscribe></Subscribe>
