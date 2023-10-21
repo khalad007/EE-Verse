@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import defaultUserPic from "../../../assets/user.png"
 
+
 const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext);
@@ -22,6 +23,7 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end">
+              
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
                         <img src={user ? user.photoURL || defaultUserPic : defaultUserPic} alt="User Profile" />

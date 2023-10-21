@@ -34,7 +34,7 @@ const AddProduct = () => {
                     swal("Good job!", "New Product Added Successfully.!", "success");
                 }
             })
-    }
+    } 
 
     return (
         <div className="bg-[#f4f3f0] p-24">

@@ -2,7 +2,7 @@
 
 const HowItWorks = () => {
     return (
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-6 lg:ml-44 md:ml-32 ml-10 my-14">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 lg:ml-44 md:ml-32 ml-24 my-14">
             <div className="card w-60 bg-base-100   ">
                 <figure className="px-10 pt-10">
                     <h1 className="bg-black text-white w-12 h-12 font-bold rounded-full flex justify-center items-center">1</h1>

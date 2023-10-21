@@ -7,7 +7,7 @@ const Product = ({ item }) => {
 
     return (
         <div>
-            
+
             <div className="card  bg-base-100 shadow-xl">
                 <figure><img className="w-44 h-40" src={photoURL} alt="Shoes" /></figure>
                 <div className="card-body">
@@ -24,8 +24,8 @@ const Product = ({ item }) => {
                     </div>
                 </div>
                 <div className="flex justify-center gap-10 mb-2">
-                    <Link to="/update"><button className="btn bg-[#247CC6] text-white">Update</button></Link>
-                   <Link to={`/productdetails/${_id}`}>  <button className="btn bg-[#247CC6] text-white">Details</button></Link>
+                    <Link to={`/update/${_id}`}><button className="btn bg-[#247CC6] text-white">Update</button></Link>
+                    <Link to={`/productdetails/${_id}`}>  <button className="btn bg-[#247CC6] text-white">Details</button></Link>
                 </div>
             </div>
         </div>
