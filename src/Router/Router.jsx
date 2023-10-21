@@ -42,7 +42,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/brandproduct/:name',
-                element: <PrivateRoute><BrandProduct></BrandProduct></PrivateRoute>,
+                element: <BrandProduct></BrandProduct>,
                 loader: ({ params }) =>  fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/brand/${params.name}`)
                 
             },
@@ -53,7 +53,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/productdetails/:id',
-                element: <ProductDetails></ProductDetails>,
+                element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
                 loader: ({ params }) =>  fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/productdetails/${params.id}`)
             },
             {
