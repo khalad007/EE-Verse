@@ -20,22 +20,24 @@ const BrandProduct = () => {
     return (
         <div>
             <Slider slider={slider}></Slider>
-            {product ? (
-                <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-3 my-7'>
+            {
+            product.length > 0  ? (
+                
+                <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-3 my-12'>
+                    
                     {
-                        product.map(item => (
+                        product.map(item => ( 
                             <Product key={item._id} item={item}></Product>
                         )
                         )
                     }
                 </div>
-            )
-                :
-                (
-                    <div>
-                        <h2>opss</h2>
-                    </div>
-                )}
+            ) : (
+                <div className='text-5xl text-center my-16'>
+                    <h2 className='text-red-600'>opss</h2><br />
+                    <h2>There Is no product for this brand </h2>
+                </div>
+            )}
         </div>
     );
 };
@@ -43,31 +45,5 @@ const BrandProduct = () => {
 export default BrandProduct;
 
 
-
-// import { useEffect, useState } from "react";
-// import { json, useLoaderData } from "react-router-dom";
-// import Slider from "../Product/Slider";
-
-
-// const BrandProduct = () => {
-//     const [products, setProducts] = useState([]);
-
-//     const slider = useLoaderData();
-//     useEffect(() => {
-//         fetch(`http://localhost:5000/product/${slider.brandName}`)
-//         .then(res => json())
-//         .then(data => setProducts(data));
-//     }, [])
-//     console.log(slider);
-//     console.log(products);
-
-//     return (
-//         <div>
-//             <Slider slider={slider}></Slider>
-//         </div>
-//     );
-// };
-
-// export default BrandProduct;
 
 

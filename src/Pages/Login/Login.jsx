@@ -24,6 +24,8 @@ const Login = () => {
                 // Google Sign-In successful, you can handle the user creation or login here
                 const user = result.user;
                 console.log(user);
+                setSuccess(swal("Good job!", "Login Success.!", "success"))
+                navigate(location?.state ? location.state : '/');
                 // Redirect or handle the user state as needed
             })
             .catch((error) => {
@@ -45,6 +47,8 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 setSuccess(swal("Good job!", "Login Success.!", "success"))
+                e.target.reset();
+
                 navigate(location?.state ? location.state : '/');
 
             })
@@ -88,9 +92,12 @@ const Login = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Sign In</button>
+                                <button className="btn bg-[#247CC6] text-white">Sign In</button>
                             </div>
                         </form>
+                        {
+                            loginError && <p  className="text-center text-red-700 font-bold mt-3">{loginError}</p>
+                        }
                         <p className="text-base font-semibold text-center py-10">Don't Have An Account ?
                             <Link className="text-[#F75B5F]" to="/register">Register</Link></p>
                     </div>

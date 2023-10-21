@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import BrandName from "./BrandName";
 import NewArrival from "./NewArrival";
 import Subscribe from "./Subscribe";
+import HowItWorks from "./HowItWorks";
 
 
 
@@ -27,6 +28,8 @@ const Home = () => {
                 <h1 className="text-center font-bold lg:text-5xl text-4xl my-10">New <span className="text-[#247CC6]">Arrival ..!</span></h1>
                 <NewArrival></NewArrival>
             </div>
+
+            <HowItWorks></HowItWorks>
 
             <div className='max-w-6xl mx-auto'>
                 <Subscribe></Subscribe>

@@ -7,7 +7,7 @@ const Navbar2 = () => {
             <ul className="flex  lg:gap-5 items-center justify-center ">
                 <Link to='/'><button className="btn px-2 border-none bg-[#247CC6] text-white">Home</button></Link>
                 <Link to='/addproduct'><button className="btn px-2 border-none bg-[#247CC6] text-white">Add Product</button></Link>
-                <Link to='/'><button className="btn px-2 border-none bg-[#247CC6] text-white">My Cart</button></Link> 
+                <Link to='/mycart'><button className="btn px-2 border-none bg-[#247CC6] text-white">My Cart</button></Link> 
                 <Link to='/allproduct'><button className="btn px-2 border-none bg-[#247CC6] text-white">All Product</button></Link> 
             </ul>
         </div>
