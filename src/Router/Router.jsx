@@ -7,21 +7,22 @@ import Register from "../Pages/Register/Register";
 import AllProduct from "../Pages/AllProduct/AllProduct";
 
 import BrandProduct from "../Pages/BrandProduct/BrandProduct";
-import Slider from "../Pages/Product/Slider";
 import Update from "../Pages/Update/Update";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import MyCart from "../Pages/MyCart/MyCart";
 import PrivateRoute from "./PrivateRoute";
+import Error from "../Pages/Error/Error";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/brand')
+                loader: () => fetch('https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/brand')
             },
             {
                 path: '/addproduct',
@@ -42,23 +43,23 @@ const router = createBrowserRouter([
             {
                 path: '/brandproduct/:name',
                 element: <PrivateRoute><BrandProduct></BrandProduct></PrivateRoute>,
-                loader: ({ params }) =>  fetch(`http://localhost:5000/brand/${params.name}`)
+                loader: ({ params }) =>  fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/brand/${params.name}`)
                 
             },
             {
                 path: '/update/:id',
                 element: <PrivateRoute><Update></Update></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/update/${params.id}`)
+                loader: ({params}) => fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/update/${params.id}`)
             },
             {
                 path: '/productdetails/:id',
                 element: <ProductDetails></ProductDetails>,
-                loader: ({ params }) =>  fetch(`http://localhost:5000/productdetails/${params.id}`)
+                loader: ({ params }) =>  fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/productdetails/${params.id}`)
             },
             {
                 path: '/mycart',
                 element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-                loader: () => fetch("http://localhost:5000/curt")
+                loader: () => fetch("https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/curt")
             }
             
         ]

@@ -11,7 +11,7 @@ const BrandProduct = () => {
 
     const slider = useLoaderData();
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${slider.brandName}`)
+        fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/products/${slider.brandName}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, []);

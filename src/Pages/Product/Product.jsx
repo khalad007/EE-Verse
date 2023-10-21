@@ -14,10 +14,10 @@ const Product = ({ item }) => {
                     <h2 className="card-title">
                         {name}!
                     </h2>
-                    <p>Brand : {brandName}</p>
+                    <p><span className="font-bold">Brand :</span> {brandName}</p>
                     <p>{description}</p>
-                    <p>Rating : {rating}</p>
-                    <p>Price : {price}</p>
+                    <p><span className="font-bold">Rating :</span> {rating}</p>
+                    <p><span className="font-bold">Price : </span>{price}$</p>
                     <div className="card-actions justify-end">
                         <div className="badge badge-outline">{type}</div>
 

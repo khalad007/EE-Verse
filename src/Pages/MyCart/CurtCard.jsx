@@ -15,7 +15,7 @@ const CurtCard = ({ curt, curts, setCurts }) => {
         })
             .then((willDelete) => {
                 if (willDelete) {
-                    fetch(`http://localhost:5000/curt/${id}`, {
+                    fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/curt/${id}`, {
                         method: "DELETE"
                     })
                         .then(res => res.json())
