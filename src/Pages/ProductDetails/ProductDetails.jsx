@@ -11,7 +11,7 @@ const ProductDetails = () => {
     console.log(curt);
 
     const handleCurt = () => {
-        fetch("https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/curt", {
+        fetch("https://tenth-assignment-server-xdlhaccms-abirs-projects-823d9b34.vercel.app/curt", {
             method: "POST",
             headers: {
                 'content-type': 'application/json',

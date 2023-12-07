@@ -22,7 +22,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/brand')
+                loader: () => fetch('https://tenth-assignment-server-xdlhaccms-abirs-projects-823d9b34.vercel.app/brand')
             },
             {
                 path: '/addproduct',
@@ -43,23 +43,23 @@ const router = createBrowserRouter([
             {
                 path: '/brandproduct/:name',
                 element: <BrandProduct></BrandProduct>,
-                loader: ({ params }) =>  fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/brand/${params.name}`)
+                loader: ({ params }) =>  fetch(`https://tenth-assignment-server-xdlhaccms-abirs-projects-823d9b34.vercel.app/brand/${params.name}`)
                 
             },
             {
                 path: '/update/:id',
                 element: <PrivateRoute><Update></Update></PrivateRoute>,
-                loader: ({params}) => fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/update/${params.id}`)
+                loader: ({params}) => fetch(`https://tenth-assignment-server-xdlhaccms-abirs-projects-823d9b34.vercel.app/update/${params.id}`)
             },
             {
                 path: '/productdetails/:id',
                 element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-                loader: ({ params }) =>  fetch(`https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/productdetails/${params.id}`)
+                loader: ({ params }) =>  fetch(`https://tenth-assignment-server-xdlhaccms-abirs-projects-823d9b34.vercel.app/productdetails/${params.id}`)
             },
             {
                 path: '/mycart',
                 element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-                loader: () => fetch("https://tenth-assignment-server-mv319buzq-abirs-projects-823d9b34.vercel.app/curt")
+                loader: () => fetch("https://tenth-assignment-server-xdlhaccms-abirs-projects-823d9b34.vercel.app/curt")
             }
             
         ]
